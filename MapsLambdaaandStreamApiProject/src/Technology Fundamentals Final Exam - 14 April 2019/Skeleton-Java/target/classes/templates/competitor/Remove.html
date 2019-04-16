@@ -1,0 +1,29 @@
+<form class="competitor-create" th:action="@{/delete/{id}(id=${competitor.id})}" method="post"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="create-header">
+        Remove Competitor
+    </div>
+    <div class="create-competitoritem">
+        <div class="create-competitoritem-label">Name</div>
+        <input type="text" class="create-competitoritem-content" name="name" th:value="${competitor.name}" disabled/>
+    </div>
+    <div class="create-competitoritem">
+        <div class="create-competitoritem-label">Age</div>
+        <input type="number" min="1" step="1" rows="3" class="create-competitoritem-content" name="age"
+               th:value="${competitor.age}"
+               disabled/>
+    </div>
+    <div class="create-competitoritem">
+        <div class="create-competitoritem-label">Team</div>
+        <input class="create-competitoritem-content" name="team"
+               th:value="${competitor.team}" disabled/>
+    </div>
+    <div class="create-competitoritem">
+        <div class="create-competitoritem-label">Category</div>
+        <input class="create-competitoritem-content" name="category" th:value="${competitor.category}" disabled>
+    </div>
+    <div class="create-button-holder">
+        <button type="submit" class="button">Remove</button>
+        <a type="button" th:href="@{/}" class="button">Back</a>
+    </div>
+</form>

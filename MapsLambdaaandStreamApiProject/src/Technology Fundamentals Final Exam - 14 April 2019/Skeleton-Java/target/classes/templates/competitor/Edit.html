@@ -1,0 +1,47 @@
+<form class="competitor-create" th:action="@{/edit/{id}(id=${competitor.id})}" method="post"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+    <div class="create-header">
+        Edit Competitor
+    </div>
+    <div class="create-competitoritem">
+        <div class="create-competitoritem-label">Name</div>
+        <input type="text" class="create-competitoritem-content" name="name" th:value="${competitor.name}" required/>
+    </div>
+    <div class="create-competitoritem">
+        <div class="create-competitoritem-label">Age</div>
+        <input type="number" min="1" step="1" rows="3" class="create-competitoritem-content" name="age"
+               th:value="${competitor.age}"
+               required/>
+    </div>
+    <div class="create-competitoritem">
+        <div class="create-competitoritem-label">Team</div>
+        <input class="create-competitoritem-content" name="team" th:value="${competitor.team}" required/>
+    </div>
+
+    <div class="create-competitoritem">
+        <div class="create-competitoritem-label">Category</div>
+        <select class="create-competitoritem-content" name="category" id="category">
+            <option th:text="${competitor.category}"></option>
+
+            <div th:if="${competitor.category} == 'Superstock TT Race'">
+                <option>Superbike and Senior TT Races</option>
+                <option>Sidecar TT Races</option>
+            </div>
+
+            <div th:if="${competitor.category} == 'Superbike and Senior TT Races'">
+                <option> Superstock TT Race</option>
+                <option>Sidecar TT Races</option>
+            </div>
+
+            <div th:if="${competitor.category} == 'Sidecar TT Races'">
+                <option>Superstock TT Race</option>
+                <option>Superbike and Senior TT Races</option>
+            </div>
+        </select>
+    </div>
+
+    <div class="create-button-holder">
+        <button type="submit" class="button">Edit</button>
+        <a type="button" th:href="@{/}" class="button">Back</a>
+    </div>
+</form>
