@@ -14,4 +14,4 @@
 |---|---|
 |<a href="https://softuni.bg/trainings/2072/programming-basics-with-java-september-2018" > Programming Basics </a>   | <a href="https://softuni.bg/certificates/details/60731/91dd788f"> Link</a> |
 |<a href="https://softuni.bg/trainings/2239/technology-fundamentals-with-java-january-2019"> Technology Fundamentals with Java </a>| <a href="https://softuni.bg/certificates/details/65562/c5139323"> Link</a> |
-|<a href="https://softuni.bg/trainings/2350/java-advanced-may-2019"> Java Advanced 2019  </a> | <a href="https://softuni.bg/certificates/details/65632/97b0aff0"> Link</a> |
+|<a href="https://softuni.bg/trainings/2350/java-advanced-may-2019"> Java Advanced 2019  </a> | <a 
