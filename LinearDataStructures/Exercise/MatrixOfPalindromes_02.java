@@ -7,7 +7,7 @@ public class MatrixOfPalindromes_02 {
         Scanner scanner = new Scanner(System.in);
         int row = Integer.parseInt(scanner.next());
         int column = Integer.parseInt(scanner.next());
-        if (row+column>=27){
+        if (row+column>27){
             return;
         }
         String[][] resultMatrix = new String[row][column];
